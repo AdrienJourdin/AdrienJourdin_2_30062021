@@ -140,12 +140,16 @@ header{
     text-decoration: none;
     color:white;
     background-color:#0065FC ;
+    position:relative;
+    right:10px;
 }
 #section_recherche ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-weight: bold;
     flex-wrap: wrap;
+    padding-inline-start: 0px;
+    
 }
 
 #bouton_rechercher_texte{
@@ -155,23 +159,67 @@ header{
 #section_recherche ul li{
     height: 50px;
     font-weight: bold;
-    border-top:3px #F2F2F2 solid;
-    border-right:3px #F2F2F2 solid;
-    border-bottom:3px #F2F2F2 solid;
-    border-radius:30px;
     display:flex;
-    margin:auto;
     align-items:center;
+    flex-wrap: wrap;
+}
+#section_recherche ul li:nth-child(n+2){
+border-radius:30px;
+border-top:2px #d9d9d9 solid;
+border-right:2px #d9d9d9 solid;
+border-bottom:2px #d9d9d9 solid;
+display:flex;
+align-items:center;
+margin-bottom:10px;
+}
+
+#section_recherche ul li:nth-child(1){
+    width:90%;
+}
+#section_recherche ul li:nth-child(2){
+    width:170px;
+}
+#section_recherche ul li:nth-child(3){
+    width:135px;
+}
+#section_recherche ul li:nth-child(4){
+    width:170px;
+}
+#section_recherche ul li:nth-child(5){
+    width:220px;
 }
 #section_recherche ul li i{
     background-color: #DEEBFF;
     color:#0065FC;
     border-radius: 30px;
-    height:50px;
-    width: 50px;
+    height:54px;
+    width: 54px;
     display: flex;
+    position:relative;
+    bottom:2px
 }
 #section_recherche ul li i::before{
     margin:auto;
 }
-
+.titre_filtre{
+    padding-left:10px;
+    padding-right:10px;
+}
+#section_recherche ul li:nth-child(n+2):hover{
+    color:white;
+    background-color:#0065FC ;
+}
+#infos_recherche{
+    display: flex;
+    flex-direction: row;
+}
+#infos_recherche i{
+    width:24px;
+    height:24px;
+    border-radius:100%;
+    border:1px solid #dedede;
+    color:#0065FC;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
