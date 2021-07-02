@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('Police/Raleway-VariableFont_wght.ttf');
+}
+
+body{
+font-family: 'raleway';
+margin:0px;
+font-weight: 550;
+}
+
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display:block;
+}
+a:visited{
+    text-decoration: none;
+    color:#0065FC;
+}
+h1{
+    font-weight: bolder;
+    text-align:start;
+    font-size: 1.4em;
+}
+h2{
+    font-size:1em;
+    font-weight: normal;
+    text-align: start;
+}
+
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#logo{
+    margin:0px;
+    padding:20px 0px 0px 20px;
+}
+#logo img{
+    width:110px;
+    height:auto;
+    text-align: start;
+}
+
+#head_ins{
+    width: 40%;
+    position:relative;
+    left:7px;
+    text-decoration: none;
+    color:#0065FC;
+    text-align:end;
+    vertical-align: middle;
+    font-weight:800;
+    padding:35px 20px 0px 0px;
+
+}
+#head_act{
+    width: 50%;
+    border-bottom:solid 3px #F2F2F2;
+    color:black;
+    text-align:center;
+    vertical-align: middle;
+    padding:20px 0px 13px 0px;
+}
+#head_heb{
+    width: 50%;
+    border-bottom:solid 3px #F2F2F2;
+    color:black;
+    text-align:center;
+    vertical-align: middle;
+    padding:20px 0px 13px 0px;
+}
+
+#head_heb a:visited, #head_act a:visited {
+    color:black;
+}
+#head_act a:hover, #head_heb a:hover{
+    color:#0065FC;
+}
+#head_act:hover, #head_heb:hover{
+    border-bottom: solid 3px #0065FC;
+}
+ #section_hebergements, #section_Activités, footer{
+    display: none;
+}
+
+#section_recherche{
+    display: flex;
+    flex-direction: column;
+    margin-right:18px;
+    margin-left:18px;
+}
+#champ_recherche{
+    display:flex;
+    width:100%;
+    border-radius: 10px;
+    justify-content: stretch;
+}
+
+#logo_loc{
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    color:black;
+    display:flex;
+    border-radius:15px 0px 0px 15px;
+}
+#logo_loc.fas.fa-map-marker-alt::before{
+    margin:auto;
+}
+#saisie_texte input{
+    height:46px;
+
+    width: 230px;
+    font-size: 1em;
+    font-family: 'raleway';
+
+    font-weight: bold;
+}
+ #localisation{
+    border-top: solid #F2F2F2 1px;
+    border-bottom: solid #F2F2F2 1px;
+    border-right:none;
+    border-left:none;
+}
+
+#bouton_rechercher_logo button{
+    border-radius: 15px;
+    border:none;
+    width:50px;
+    height:50px;
+    text-decoration: none;
+    color:white;
+    background-color:#0065FC ;
+}
+#section_recherche ul{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#bouton_rechercher_texte{
+    display:none;
+}
+
+#section_recherche ul li{
+    height: 50px;
+    font-weight: bold;
+    border-top:3px #F2F2F2 solid;
+    border-right:3px #F2F2F2 solid;
+    border-bottom:3px #F2F2F2 solid;
+    border-radius:30px;
+    display:flex;
+    margin:auto;
+    align-items:center;
+}
+#section_recherche ul li i{
+    background-color: #DEEBFF;
+    color:#0065FC;
+    border-radius: 30px;
+    height:50px;
+    width: 50px;
+    display: flex;
+}
+#section_recherche ul li i::before{
+    margin:auto;
+}
+
