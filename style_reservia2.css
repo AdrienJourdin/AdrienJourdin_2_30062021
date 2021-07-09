@@ -323,7 +323,7 @@ header{
     flex-direction: column;
     width:100%;
     margin:auto;
-    margin-left:10px;
+    padding-left:10px;
 
 }
 
@@ -482,20 +482,15 @@ footer ul li a:visited{
         flex-wrap: nowrap;
         padding-left:50px;
     }
-    h1{
-        margin:0px;
-    }
     #head_ins{
         width: 11.11%;
-        position:relative;
-        left:7px;
         text-decoration: none;
         color:#0065FC;
         text-align:end;
         vertical-align: middle;
         font-weight:800;
         padding: 0px;
-        margin:45px 80px 0px 0px;
+        padding:45px 80px 0px 0px;
         order:+2;
     }
     #head_act{
@@ -523,11 +518,12 @@ footer ul li a:visited{
         width: 65%;
         padding-left:0px   
     }
-
-    #section_recherche{
-        padding-left:50px;
+    #saisie_texte input{
         margin-left:0px;
+        padding-left:20px;
     }
+
+
 
     #bouton_rechercher_logo{
         display: none;
@@ -548,10 +544,7 @@ footer ul li a:visited{
         background-color:#0065FC ;
         text-align: center;
     }
-    #section_recherche ul li:nth-child(1){
-        width:60px;
-        margin-right: 30px;
-    }
+
     #section_recherche ul li{
         flex-direction: row;
     }
@@ -559,17 +552,16 @@ footer ul li a:visited{
     #section_hebergements{
         display: flex;
         flex-direction: row;
-        width: 100%;
-        padding-left:50px;
-        padding-top:30px;
+        justify-content: space-between;
+        width: 90%;
+        margin:auto;
     
     }
     #section_hebergements article{
-    margin-right:20px;
-    margin-left:0px;
-    width:61%;
-    background-color: #f2f2f2;
-    border-radius:10px;
+        width:65.6%;
+        background-color: #f2f2f2;
+        border-radius:10px;
+        margin:0px;
     }
     
     #section_hebergements ul{
@@ -577,7 +569,8 @@ footer ul li a:visited{
         flex-direction: row;
         flex-wrap: wrap;
         padding-inline-start: 0px;
-        padding-right:40px;
+        width: 90%;
+        margin:auto;
     }
     
     #section_hebergements h1{
@@ -586,28 +579,23 @@ footer ul li a:visited{
     }
 
     #liste_hébergements li {
-        width:225px;
-        height: 200px;
-        margin-left:0px;
-        margin-left:30px;
         background-color: white;
+        margin-right:30px;
+        margin-top:30px;
+        width:auto;
+
     }
-    
+
     .image_heb{
-        width:225px;
+        width:240px;
         height:115px;
     }
     
-    #afficher_plus{
-        font-size:0.8em;
-        font-weight: 700;
-        margin:40px;
-    }
     
     #section_hebergements aside{
-        margin-left: 0px;
+
         order:+1;
-        width: 29%;
+        width: 31.3%;
         border-radius: 10px;
     }
     #titre_populaire{
@@ -628,19 +616,8 @@ footer ul li a:visited{
     
     #liste_populaires li {
 
-        width:335px;
-        height:135px;
-        margin-top:15px;
-        margin-bottom:15px;
         border-radius: 10px;
-        margin-left:40px;
         white-space:normal;
-    }
-    #liste_populaires li a{
-    display: flex;
-    flex-flow: column wrap;
-    height:145px;
-    white-space:normal;
     }
     .nom_pop{
     white-space:normal;
