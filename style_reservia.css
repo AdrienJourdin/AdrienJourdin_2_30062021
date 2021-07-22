@@ -179,7 +179,6 @@ header{
     font-size: 1.2em;
     font-family: 'raleway';
     font-weight: 800;
-    margin-left:10px;
 }
  #localisation{
     border-top: solid #F2F2F2 1px;
@@ -763,7 +762,7 @@ footer ul li a:visited{
     }
 }
 
-@media all and (min-device-width: 400px) and (max-device-width:1100px){
+@media all and (min-device-width: 450px) and (max-device-width:1100px){
     #liste_populaires li{
         max-width:48%;
     }
@@ -779,6 +778,7 @@ footer ul li a:visited{
         flex-direction: column;
         flex-wrap: wrap;
     }
+    
     .image_pop{
         display: inline-block;
         background-position: center;
